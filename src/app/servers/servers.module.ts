@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServersComponent } from './servers/servers.component';
+import { ServersService } from './services/servers.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -9,7 +11,14 @@ import { ServersComponent } from './servers/servers.component';
     ServersComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
+  ],
+  exports: [
+    ServersComponent
+  ],
+  providers: [
+    ServersService
   ]
 })
 export class ServersModule { }
