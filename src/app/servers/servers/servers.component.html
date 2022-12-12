@@ -1,5 +1,8 @@
 <div class="row">
-    <div class="col" *ngFor="let server of servidores">
+    <button class="btn btn-info" (click)="onReload()">Reload Servers</button>
+
+
+    <div class="col" *ngFor="let server of servers">
         <!-- Por cada servidor crearemos una tarjeta con el nombre y el estado del servidor-->
         <div class="card mt-2">
             <div class="card-header">
@@ -11,4 +14,6 @@
             </div>
         </div>
     </div>
+
+    
 </div>

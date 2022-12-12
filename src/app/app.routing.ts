@@ -5,6 +5,7 @@ import { UsersComponent } from './users/users/users.component';
 import { ServersComponent } from './servers/servers/servers.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
+import { UserComponent } from './users/user/user.component';
 
 const routes: Routes = [{
     path:'',
@@ -14,6 +15,10 @@ const routes: Routes = [{
     {
     path:'users',
     component: UsersComponent,
+    },
+    {
+    path:'users/:id/:name/:email',
+    component: UserComponent,
     },
     {
     path:'servers',

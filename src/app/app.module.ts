@@ -7,7 +7,7 @@ import { ServersModule } from './servers/servers.module';
 import { SharedModule } from './shared/shared.module';
 import { UsersModule } from './users/users.module';
 import { AppRoutingModule } from './app.routing';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
