@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { UserComponent } from './user/user.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,7 +15,8 @@ import { UserComponent } from './user/user.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     UsersComponent,

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ServersComponent } from './servers/servers.component';
 import { ServersService } from './services/servers.service';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     ServersComponent
