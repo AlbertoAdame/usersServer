@@ -1,8 +1,11 @@
 <div class="row">
     <button class="btn btn-info" (click)="onReload()">Reload Servers</button>
 
-    <a href="#" class="list-group-item list-group-item-action" *ngFor="let server of servers"
-        [routerLink]="['/servers', 3, 'edit']" [queryParams]="{allowEdit: '1'}" fragment="loading">
+    <!-- <a href="#" class="list-group-item list-group-item-action" *ngFor="let server of servers"
+        [routerLink]="['/servers', 3, 'edit']" [queryParams]="{allowEdit: '1'}" fragment="loading"> -->
+
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let server of servers"
+[routerLink]="['/servers', server.id]" [queryParams]="{allowEdit: '1'}" fragment="loading">
 
 
     <!-- <div class="col" *ngFor="let server of servers"> -->
@@ -21,4 +24,4 @@
 
 </div>
 
-<!-- De manera programática PARTE 4 -->
+

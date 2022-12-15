@@ -8,13 +8,16 @@ import { User } from '../interfaces/users.interfaces';
 })
 export class UsersComponent implements OnInit {
 
-  usuarios!: User[];
+  users!: User[];
   constructor(private servicioUsuario:UsersService) { }
+
+  
+
 
   ngOnInit(): void {
     this.servicioUsuario.obtenerUsuarios()
     .subscribe({
-      next: (res) => this.usuarios = res,
+      next: (res) => this.users = res,
       error: (error) => console.log(error)
     })
   }

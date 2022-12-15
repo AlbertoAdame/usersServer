@@ -30,4 +30,8 @@ export class ServersService {
     return [...this._servers];
 }
 
+getServer(id: number):any{
+  return [...this._servers].at(id);
+}
+
 }

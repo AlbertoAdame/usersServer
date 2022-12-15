@@ -1,25 +1,30 @@
-<div class="row">
-    <div class="col" *ngFor="let usuario of usuarios">
+
+
+<!-- <div class="row"> -->
+    <a href="#" class="list-group-item list-group-item-action" *ngFor="let user of users"
+        [routerLink]="['/users', user.id, user.name, user.email]">
+    <!-- <div class="col" *ngFor="let usuario of users"> -->
         <!-- Mostraremos una tarjeta por cada usuario -->
         <div class="card mt-2">
             <div class="card-header">
-                {{usuario.name}}
+                {{user.name}}
             </div>
             <div class="card-body">
                 <span>
                     <strong>
                         User id:
                     </strong> 
-                    {{usuario.id}}
+                    {{user.id}}
                 </span>
                 <br>
                 <span>
                     <strong>
                         User email: 
                     </strong> 
-                    {{usuario.email}}
+                    {{user.email}}
                 </span>
             </div>
         </div>
-    </div>
-</div>
+    <!-- </div> -->
+<!-- </div> -->
+

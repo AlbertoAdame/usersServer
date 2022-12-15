@@ -29,6 +29,8 @@ const routes: Routes = [{
     path: 'servers/:id/edit',
     component: EditServerComponent,
     },
+    { path: 'servers/:id', 
+    component: EditServerComponent },
     {
     path:'**',
     component: NotFoundComponent,
